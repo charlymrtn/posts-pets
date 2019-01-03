@@ -15,9 +15,12 @@ Route::get('/', function () {
     return view('pages.index');
 })->name('index');
 
-Route::get('/blog', function () {
-    return view('pages.blog');
-})->name('blog');
+Route::middleware('auth')->group(function (){
+
+    Route::get('/blog', function () {
+        return view('pages.blog');
+    })->name('blog');
+});
 
 Route::get('/contacto', function () {
     return view('pages.contact');
@@ -26,3 +29,8 @@ Route::get('/contacto', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
