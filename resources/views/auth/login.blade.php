@@ -1,73 +1,125 @@
-@extends('layouts.app')
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.png">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+	<title>Pets - Ingresar</title>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
 
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+	<!-- Style -->
+    <link href="css/minificado/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/minificado/ingreso.min.css" rel="stylesheet"/>
 
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+</head>
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+<body class="pagina-ingreso">
+	<nav class="navbar navbar-transparent navbar-absolute" style="padding-top: 65px;">
+    	<div class="container">
+        	<div class="logo float-left"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+    	</div>
+    </nav>
 
-                                @if ($errors->has('password'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+    <div class="wrapper">
+		<div class="header header-filter" style="background-image: url('images/usuarios/ingresar.jpg'); background-size: cover; background-position: top center;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+						<div class="card tarjeta-registro">
+							<form class="form" method="" action="">
+								<div class="header header-primary text-center">
+									<h4>Ingresar</h4>
+								</div>
+								<p class="text-divider">¡Volviste! Bienvenido nuevamente &#10084;</p><br>
+								<div class="content">
 
-                        <div class="form-group row">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+									<div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">email</i>
+										</span>
+										<input type="text" class="form-control" placeholder="Correo electrónico...">
+									</div>
 
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
+									<div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">lock_outline</i>
+										</span>
+										<input type="password" placeholder="Contraseña..." class="form-control" />
+									</div><br>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
 
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="optionsCheckboxes" checked>
+											Recordar mis datos
+										</label>
+									</div><br>
+								</div>
+								<div class="footer text-center">
+									<a href="#" class="btn btn-simple btn-primary btn-lg">Ingresar <i class="material-icons">fingerprint</i></a>
+								</div>
+								
+								<div class="password"><a href=""><span class="label label-danger">¿Olvidaste la contraseña?</span></a></div>
+								
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="footer">
+		        <div class="container">
+		            <nav class="pull-left">
+						<ul>
+							<li>
+								<a href="#">
+									Inicio
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								   Blog
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								   Nosotros
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Legal
+								</a>
+							</li>
+						</ul>
+		            </nav>
+		            <div class="copyright pull-right">
+		                <p>Hecho con el &#10084; <strong> hacia los animales</strong></p>
+		            </div>
+		        </div>
+		    </footer>
+
+		</div>
+
     </div>
-</div>
-@endsection
+
+
+</body>
+	<!--   JS   -->
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/material.min.js"></script>
+	<script src="js/material-kit.js" type="text/javascript"></script>
+
+</html>
