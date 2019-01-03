@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta name="csrf-token" content="{{csrf_token()}}">
 
         <title>Pets - @yield('title')</title>
 
@@ -51,16 +51,35 @@
                                         <i class="material-icons">home</i> Inicio
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="{{route('login')}}">
-                                        <i class="material-icons">fingerprint</i> Ingresar
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{route('register')}}">
-                                        <i class="material-icons">person_add</i> Registrarse
-                                    </a>
-                                </li>
+                                @guest
+                                    <li>
+                                        <a href="{{route('login')}}">
+                                            <i class="material-icons">fingerprint</i> Ingresar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{route('register')}}">
+                                            <i class="material-icons">person_add</i> Registrarse
+                                        </a>
+                                    </li>
+                                @else
+                                    <li>
+                                        <a href="{{route('blog')}}">
+                                            <i class="material-icons">rss_feed</i> Blog
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                                            <i class="material-icons">exit_to_app</i> Salir
+                                        </a>
+
+                                        <form id="logout-form" action="{{route('logout')}}" method="POST" style="display: none;">
+                                            @csrf
+                                        </form>
+                                    </li>
+                                @endguest
                                 <li>
                                     <a href="{{route('contacto')}}">
                                         <i class="material-icons">contact_mail</i> Contacto
