@@ -9,9 +9,7 @@ class SiteController extends Controller
 {
     public function index()
     {
-        $posts = Post::all();
-
-        return view('pages.index',compact(['posts']));
+        return view('pages.index');
     }
 
     public function contact()
@@ -21,7 +19,7 @@ class SiteController extends Controller
 
     public function blog()
     {
-        $posts = Post::all();
+        $posts = Post::paginate(3);
 
         return view('pages.blog',compact(['posts']));
     }

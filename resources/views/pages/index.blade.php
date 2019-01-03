@@ -28,7 +28,5 @@
 
     @include('sections.feature')
 
-    @include('sections.blog')
-
     <div style="padding-bottom: 10px;"></div>
 @endsection
