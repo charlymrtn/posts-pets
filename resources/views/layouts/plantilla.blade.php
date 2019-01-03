@@ -11,7 +11,7 @@
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" sizes="56x56" href="{{asset('images/fav-icon/icon.png')}}">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 
         <!-- Vendor Styles -->
 
@@ -32,59 +32,101 @@
 
     </head>
     <body>
-        @yield('content')
+        <div class="main-page-wrapper home-page-two">
 
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="footer-data-wrapper">
+            <div class="html-top-content">
+                <!-- Menú -->
+                <header class="theme-main-header">
+                    <div class="container">
+                        <div class="menu-wrapper clearfix">
+                            <div class="logo float-left"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
 
-                    <div class="bottom-footer">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-7 col-xs-12 text-right pull-right">
-                                <ul class="footer-menu">
-                                    <li><a href="blog.html" class="tran3s">Blog</a></li>
-                                    <li><a href="#" class="tran3s">Nosotros</a></li>
-                                    <li><a href="#" class="tran3s">Adopción </a></li>
-                                    <li><a href="#" class="tran3s">Legal</a></li>
-                                </ul>
+                            <ul class="button-group float-right">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class="material-icons">home</i> Inicio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class="material-icons">fingerprint</i> Ingresar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class="material-icons">person_add</i> Registrarse
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class="material-icons">contact_mail</i> Contacto
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <!-- /Menú  -->
 
-                                <ul>
-                                    <li class="search-form" style="margin-right: 40px;">
-                                        <form action="">
-                                            <input class="buscar" align="middle" type="text" name="" placeholder="¿Qué deseas buscar?">
-                                            <button type="submit" >
-                                                <i class="material-icons">search</i>
-                                            </button>
-                                        </form>
-                                    </li>
-                                </ul><br>
+                @yield('content')
 
-                                <ul class="social-icon">
-                                    <li><a href="#" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a href="#" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a href="#" class="tran3s"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                                    <li><a href="#" class="tran3s"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6 col-md-5 col-xs-12 footer-logo">
-                                <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
-                                <p>Hecho con el &#10084; <strong> hacia los animales</strong></p>
+                <!-- Footer -->
+                <footer>
+                    <div class="container">
+                        <div class="footer-data-wrapper">
+
+                            <div class="bottom-footer">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-7 col-xs-12 text-right pull-right">
+                                        <ul class="footer-menu">
+                                            <li><a href="blog.html" class="tran3s">Blog</a></li>
+                                            <li><a href="#" class="tran3s">Nosotros</a></li>
+                                            <li><a href="#" class="tran3s">Adopción </a></li>
+                                            <li><a href="#" class="tran3s">Legal</a></li>
+                                        </ul>
+
+                                        <ul>
+                                            <li class="search-form" style="margin-right: 40px;">
+                                                <form action="">
+                                                    <input class="buscar" align="middle" type="text" name=""
+                                                           placeholder="¿Qué deseas buscar?">
+                                                    <button type="submit">
+                                                        <i class="material-icons">search</i>
+                                                    </button>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                        <br>
+
+                                        <ul class="social-icon">
+                                            <li><a href="#" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li><a href="#" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li><a href="#" class="tran3s"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                            </li>
+                                            <li><a href="#" class="tran3s"><i class="fa fa-pinterest"
+                                                                              aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 col-md-5 col-xs-12 footer-logo">
+                                        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+                                        <p>Hecho con el &#10084; <strong> hacia los animales</strong></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </footer>
+                <!-- /Footer -->
+
+                <!-- Top Button -->
+                <button class="scroll-top tran3s color-one-bg" style="background: black; color: white;">
+                    <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+                </button>
+                <!-- /Top Button -->
             </div>
-        </footer>
-        <!-- /Footer -->
-
-
-        <!-- Top Button -->
-        <button class="scroll-top tran3s color-one-bg" style="background: black; color: white;">
-            <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
-        </button>
-        <!-- /Top Button -->
-
+        </div>
 
         <script type="text/javascript" src="{{asset('vendor/jquery.2.2.3.min.js')}}"></script>
         <script type="text/javascript" src="{{asset('vendor/bootstrap/bootstrap.min.js')}}"></script>
