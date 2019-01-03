@@ -12,7 +12,7 @@ return [
 
     'user' => [
         'add_default_role_on_register' => true,
-        'default_role'                 => 'user',
+        'default_role'                 => 'miembro',
         'namespace'                    => null,
         'default_avatar'               => 'users/cat.png',
         'redirect'                     => '/panel',

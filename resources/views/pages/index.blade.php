@@ -16,7 +16,7 @@
                     <div class="item"><img src="{{asset('images/home/apps-1.jpg')}}" alt=""></div>
                     <div class="item"><img src="{{asset('images/home/apps-2.jpg')}}" alt=""></div>
                     <div class="item"><img src="{{asset('images/home/apps-3.jpg')}}" alt=""></div>
-                    <div class="item"><img src="{{asset('images/home/apps-1.jp')}}g" alt=""></div>
+                    <div class="item"><img src="{{asset('images/home/apps-2.jpg')}}" alt=""></div>
                     <div class="item"><img src="{{asset('images/home/apps-1.jpg')}}" alt=""></div>
                 </div>
             </div>

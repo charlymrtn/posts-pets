@@ -125,12 +125,12 @@
                                     </ul>
                                     <br>
 
-                                    {{--<ul class="social-icon">--}}
-                                        {{--<li><a href="#" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a>--}}
-                                        {{--</li>--}}
-                                        {{--<li><a href="#" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a>--}}
-                                        {{--</li>--}}
-                                    {{--</ul>--}}
+                                    <ul class="social-icon">
+                                        <li><a href="{{setting('site.github')}}" class="tran3s" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="{{setting('site.twitter')}}" class="tran3s" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="col-lg-6 col-md-5 col-xs-12 footer-logo">
                                     <div class="logo"><a href="{{route('index')}}"><img src="images/logo.png" alt="Logo"></a></div>
