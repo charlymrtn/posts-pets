@@ -14,8 +14,8 @@ return [
         'add_default_role_on_register' => true,
         'default_role'                 => 'user',
         'namespace'                    => null,
-        'default_avatar'               => 'users/default.png',
-        'redirect'                     => '/admin',
+        'default_avatar'               => url('images/fav-icon/cat.png'),
+        'redirect'                     => '/panel',
     ],
 
     /*
@@ -120,14 +120,14 @@ return [
         /*
          * Select default language
          */
-        'default' => 'en',
+        'default' => 'es',
 
         /*
          * Select languages that are supported.
          */
         'locales' => [
             'en',
-            //'pt',
+            'es',
         ],
     ],
 
@@ -143,17 +143,17 @@ return [
     'dashboard' => [
         // Add custom list items to navbar's dropdown
         'navbar_items' => [
-            'Profile' => [
+            'Perfil' => [
                 'route'      => 'voyager.profile',
                 'classes'    => 'class-full-of-rum',
                 'icon_class' => 'voyager-person',
             ],
-            'Home' => [
+            'Inicio' => [
                 'route'        => '/',
                 'icon_class'   => 'voyager-home',
                 'target_blank' => true,
             ],
-            'Logout' => [
+            'Salir' => [
                 'route'      => 'voyager.logout',
                 'icon_class' => 'voyager-power',
             ],
@@ -163,6 +163,7 @@ return [
             'TCG\\Voyager\\Widgets\\UserDimmer',
             'TCG\\Voyager\\Widgets\\PostDimmer',
             'TCG\\Voyager\\Widgets\\PageDimmer',
+            'App\\Widgets\\User'
         ],
 
     ],
@@ -181,7 +182,7 @@ return [
         'add_menu_item' => true,
 
         // which menu add item to
-        'default_menu' => 'admin',
+        'default_menu' => 'panel',
 
         // When a BREAD is added, create the related Permission.
         'add_permission' => true,
@@ -199,7 +200,7 @@ return [
     |
     */
 
-    'primary_color' => '#22A7F0',
+    'primary_color' => '#17F27E',
 
     'show_dev_tips' => true, // Show development tip "How To Use:" in Menu and Settings
 
