@@ -23,7 +23,7 @@
                                 <div class="col-xs-12">
                                     <form action="#" class="contact-us-form form-validation" auto-complete="off">
                                         <label>Nombre completo</label>
-                                        <input type="text" name="name">
+                                        <input type="text" name="name" autofocus>
                                         <label>Correo electrónico</label>
                                         <input type="email" name="email">
                                         <label>Asunto</label>

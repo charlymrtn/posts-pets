@@ -26,7 +26,7 @@
 <body class="pagina-ingreso">
 <nav class="navbar navbar-transparent navbar-absolute" style="padding-top: 65px;">
     <div class="container">
-        <div class="logo float-left"><a href="index.html"><img src="{{asset('images/logo.png')}}" alt="Logo"></a></div>
+        <div class="logo float-left"><a href="{{route('index')}}"><img src="{{asset('images/logo.png')}}" alt="Logo"></a></div>
     </div>
 </nav>
 <div class="wrapper">
@@ -47,25 +47,25 @@
                 <nav class="pull-left">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="{{route('index')}}">
                                 Inicio
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{{route('blog')}}">
                                 Blog
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                Nosotros
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Legal
-                            </a>
-                        </li>
+                        {{--<li>--}}
+                            {{--<a href="#">--}}
+                                {{--Nosotros--}}
+                            {{--</a>--}}
+                        {{--</li>--}}
+                        {{--<li>--}}
+                            {{--<a href="#">--}}
+                                {{--Legal--}}
+                            {{--</a>--}}
+                        {{--</li>--}}
                     </ul>
                 </nav>
                 <div class="copyright pull-right">

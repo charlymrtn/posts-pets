@@ -43,26 +43,26 @@
                 <header class="theme-main-header">
                     <div class="container">
                         <div class="menu-wrapper clearfix">
-                            <div class="logo float-left"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+                            <div class="logo float-left"><a href="{{route('index')}}"><img src="images/logo.png" alt="Logo"></a></div>
 
                             <ul class="button-group float-right">
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="{{route('index')}}">
                                         <i class="material-icons">home</i> Inicio
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="{{route('login')}}">
                                         <i class="material-icons">fingerprint</i> Ingresar
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="{{route('register')}}">
                                         <i class="material-icons">person_add</i> Registrarse
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank">
+                                    <a href="{{route('contacto')}}">
                                         <i class="material-icons">contact_mail</i> Contacto
                                     </a>
                                 </li>
@@ -87,10 +87,10 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-7 col-xs-12 text-right pull-right">
                                     <ul class="footer-menu">
-                                        <li><a href="blog.html" class="tran3s">Blog</a></li>
-                                        <li><a href="#" class="tran3s">Nosotros</a></li>
-                                        <li><a href="#" class="tran3s">Adopción </a></li>
-                                        <li><a href="#" class="tran3s">Legal</a></li>
+                                        <li><a href="{{route('blog')}}" class="tran3s">Blog</a></li>
+                                        {{--<li><a href="#" class="tran3s">Nosotros</a></li>--}}
+                                        {{--<li><a href="#" class="tran3s">Adopción </a></li>--}}
+                                        {{--<li><a href="#" class="tran3s">Legal</a></li>--}}
                                     </ul>
 
                                     <ul>
@@ -106,19 +106,15 @@
                                     </ul>
                                     <br>
 
-                                    <ul class="social-icon">
-                                        <li><a href="#" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                        </li>
-                                        <li><a href="#" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                        </li>
-                                        <li><a href="#" class="tran3s"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                                        </li>
-                                        <li><a href="#" class="tran3s"><i class="fa fa-pinterest"
-                                                                          aria-hidden="true"></i></a></li>
-                                    </ul>
+                                    {{--<ul class="social-icon">--}}
+                                        {{--<li><a href="#" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a>--}}
+                                        {{--</li>--}}
+                                        {{--<li><a href="#" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a>--}}
+                                        {{--</li>--}}
+                                    {{--</ul>--}}
                                 </div>
                                 <div class="col-lg-6 col-md-5 col-xs-12 footer-logo">
-                                    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+                                    <div class="logo"><a href="{{route('index')}}"><img src="images/logo.png" alt="Logo"></a></div>
                                     <p>Hecho con el &#10084; <strong> hacia los animales</strong></p>
                                 </div>
                             </div>
