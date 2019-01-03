@@ -70,62 +70,65 @@
 
                 @yield('content')
 
-                <!-- Footer -->
-                <footer>
-                    <div class="container">
-                        <div class="footer-data-wrapper">
+                <div style="padding-bottom: 10px;"></div>
 
-                            <div class="bottom-footer">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-7 col-xs-12 text-right pull-right">
-                                        <ul class="footer-menu">
-                                            <li><a href="blog.html" class="tran3s">Blog</a></li>
-                                            <li><a href="#" class="tran3s">Nosotros</a></li>
-                                            <li><a href="#" class="tran3s">Adopción </a></li>
-                                            <li><a href="#" class="tran3s">Legal</a></li>
-                                        </ul>
+            </div>
 
-                                        <ul>
-                                            <li class="search-form" style="margin-right: 40px;">
-                                                <form action="">
-                                                    <input class="buscar" align="middle" type="text" name=""
-                                                           placeholder="¿Qué deseas buscar?">
-                                                    <button type="submit">
-                                                        <i class="material-icons">search</i>
-                                                    </button>
-                                                </form>
-                                            </li>
-                                        </ul>
-                                        <br>
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="footer-data-wrapper">
 
-                                        <ul class="social-icon">
-                                            <li><a href="#" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                            </li>
-                                            <li><a href="#" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                            </li>
-                                            <li><a href="#" class="tran3s"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                                            </li>
-                                            <li><a href="#" class="tran3s"><i class="fa fa-pinterest"
-                                                                              aria-hidden="true"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-lg-6 col-md-5 col-xs-12 footer-logo">
-                                        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
-                                        <p>Hecho con el &#10084; <strong> hacia los animales</strong></p>
-                                    </div>
+                        <div class="bottom-footer">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-7 col-xs-12 text-right pull-right">
+                                    <ul class="footer-menu">
+                                        <li><a href="blog.html" class="tran3s">Blog</a></li>
+                                        <li><a href="#" class="tran3s">Nosotros</a></li>
+                                        <li><a href="#" class="tran3s">Adopción </a></li>
+                                        <li><a href="#" class="tran3s">Legal</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <li class="search-form" style="margin-right: 40px;">
+                                            <form action="">
+                                                <input class="buscar" align="middle" type="text" name=""
+                                                       placeholder="¿Qué deseas buscar?">
+                                                <button type="submit">
+                                                    <i class="material-icons">search</i>
+                                                </button>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                    <br>
+
+                                    <ul class="social-icon">
+                                        <li><a href="#" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="#" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="#" class="tran3s"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="#" class="tran3s"><i class="fa fa-pinterest"
+                                                                          aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-5 col-xs-12 footer-logo">
+                                    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+                                    <p>Hecho con el &#10084; <strong> hacia los animales</strong></p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </footer>
-                <!-- /Footer -->
+                </div>
+            </footer>
+            <!-- /Footer -->
 
-                <!-- Top Button -->
-                <button class="scroll-top tran3s color-one-bg" style="background: black; color: white;">
-                    <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
-                </button>
-                <!-- /Top Button -->
-            </div>
+            <!-- Top Button -->
+            <button class="scroll-top tran3s color-one-bg" style="background: black; color: white;">
+                <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+            </button>
+            <!-- /Top Button -->
         </div>
 
         <script type="text/javascript" src="{{asset('vendor/jquery.2.2.3.min.js')}}"></script>
