@@ -11,20 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-})->name('index');
+Route::get('/', 'SiteController@index')->name('index');
 
 Route::middleware('auth')->group(function (){
 
-    Route::get('/blog', function () {
-        return view('pages.blog');
-    })->name('blog');
+    Route::get('/blog', 'SiteController@blog')->name('blog');
 });
 
-Route::get('/contacto', function () {
-    return view('pages.contact');
-})->name('contacto');
+Route::get('/contacto', 'SiteController@contact')->name('contacto');
 
 Auth::routes();
 

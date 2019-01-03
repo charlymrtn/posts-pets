@@ -43,7 +43,7 @@
                 <header class="theme-main-header">
                     <div class="container">
                         <div class="menu-wrapper clearfix">
-                            <div class="logo float-left"><a href="{{route('index')}}"><img src="images/logo.png" alt="Logo"></a></div>
+                            <div class="logo float-left"><a href="{{route('index')}}"><img src="{{asset('images/logo.png')}}" alt="Logo"></a></div>
 
                             <ul class="button-group float-right">
                                 <li>
@@ -68,6 +68,13 @@
                                             <i class="material-icons">rss_feed</i> Blog
                                         </a>
                                     </li>
+                                @if(Auth::user()->role_id == 1)
+                                    <li>
+                                        <a href="{{route('voyager.dashboard')}}" target="_blank">
+                                            <i class="material-icons">dashboard</i> Panel
+                                        </a>
+                                    </li>
+                                @endif
                                     <li>
                                         <a href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
