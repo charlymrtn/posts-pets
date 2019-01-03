@@ -21,8 +21,9 @@
 										<span class="input-group-addon">
 											<i class="material-icons">lock_outline</i>
 										</span>
-                <input type="password" placeholder="Contraseña..." class="form-control" />
-            </div><br>
+                <input type="password" placeholder="Contraseña..." class="form-control"/>
+            </div>
+            <br>
 
 
             <div class="checkbox">
@@ -30,7 +31,8 @@
                     <input type="checkbox" name="optionsCheckboxes" checked>
                     Recordar mis datos
                 </label>
-            </div><br>
+            </div>
+            <br>
         </div>
         <div class="footer text-center">
             <a href="#" class="btn btn-simple btn-primary btn-lg">Ingresar <i class="material-icons">fingerprint</i></a>

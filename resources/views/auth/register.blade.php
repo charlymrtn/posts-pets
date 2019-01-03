@@ -1,6 +1,6 @@
 @extends('layouts.plantilla-auth')
 
-@section('title', 'Ingresar')
+@section('title', 'Crear cuenta')
 
 @section('content')
     <form class="form" method="" action="">

@@ -12,15 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('pages.index');
 });
 
 Route::get('/blog', function () {
-    return view('blog');
+    return view('pages.blog');
 });
 
 Route::get('/contacto', function () {
-    return view('contact');
+    return view('pages.contact');
 });
 
 Auth::routes();

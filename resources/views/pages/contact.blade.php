@@ -10,7 +10,9 @@
                 <!--Título-->
                 <div class="theme-title-one text-center">
                     <h2>¡Genial, gracias por querer contactarnos!</h2>
-                    <a href="#"><h5>También puedes donar para comprar comida <i class="material-icons">shopping_basket</i> <i class="material-icons">local_dining</i></h5></a>
+                    <a href="#"><h5>También puedes donar para comprar comida <i
+                                class="material-icons">shopping_basket</i> <i class="material-icons">local_dining</i>
+                        </h5></a>
                 </div> <!-- /Título -->
                 <div style="padding-top: 100px;">
 
@@ -27,7 +29,7 @@
                                         <label>Asunto</label>
                                         <input type="text" name="subject">
                                         <label>Mensaje</label>
-                                        <textarea  name="message"></textarea>
+                                        <textarea name="message"></textarea>
                                         <div class="theme-button">
                                             <span></span>
                                             <input type="submit" value="Enviar">
@@ -38,7 +40,10 @@
 
                                     <!-- Mapa -->
                                     <div class="col-xs-12">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15863.815616359221!2d-75.57430178033222!3d6.269792777390103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTYnMTEuMyJOIDc1wrAzMyc1Ni4wIlc!5e0!3m2!1ses!2sco!4v1525223313196" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15863.815616359221!2d-75.57430178033222!3d6.269792777390103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTYnMTEuMyJOIDc1wrAzMyc1Ni4wIlc!5e0!3m2!1ses!2sco!4v1525223313196"
+                                            width="100%" height="450" frameborder="0" style="border:0"
+                                            allowfullscreen></iframe>
                                     </div>
                                     <!-- /Mapa -->
                                     <div style="padding-top: 100px;">
