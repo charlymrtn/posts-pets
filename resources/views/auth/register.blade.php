@@ -4,6 +4,7 @@
 
 @section('content')
     <form class="form" method="POST" action="{{route('register')}}">
+        @csrf
         <div class="header header-primary text-center">
             <h4>Crear cuenta</h4>
         </div>
