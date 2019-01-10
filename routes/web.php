@@ -16,6 +16,7 @@ Route::get('/', 'SiteController@index')->name('index');
 Route::middleware('auth')->group(function (){
 
     Route::get('/blog', 'SiteController@blog')->name('blog');
+    Route::get('/post/{id}', 'SiteController@post')->name('post.show')->where('id', '[0-9]+');
 });
 
 Route::get('/contacto', 'SiteController@contact')->name('contacto');

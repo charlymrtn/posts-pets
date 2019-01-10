@@ -8,7 +8,7 @@
                     <div class="image"><img src="{{voyager::image($post->image)}}" alt=""></div>
                     <div class="text">
                         <h6>{{$post->author->name}}</h6>
-                        <h5><a href="#!" class="tran3s">{{$post->title}}</a></h5>
+                        <h5><a href="{{route('post.show',$post->id)}}" class="tran3s">{{$post->title}}</a></h5>
                         <p>{{$post->excerpt}}</p>
                     </div>
                 </div> <!-- /.single-blog -->

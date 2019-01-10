@@ -140,7 +140,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-lg-6 col-md-5 col-xs-12 footer-logo">
-                                    <div class="logo"><a href="{{route('index')}}"><img src="images/logo.png" alt="Logo"></a></div>
+                                    <div class="logo"><a href="{{route('index')}}"><img src="{{asset('images/logo.png')}}" alt="Logo"></a></div>
                                     <p>Hecho con el &#10084; <strong> hacia los animales</strong></p>
                                 </div>
                             </div>

@@ -7,7 +7,7 @@
     <!-- Banner -->
     <div class="inner-page-banner">
         <div class="opacity">
-            <h1>Cuidados para tu perro en el parque</h1>
+            <h1>{{$post->title}}</h1>
         </div>
     </div>
     <!-- /Banner -->
@@ -18,27 +18,11 @@
             <div class="wrapper">
                 <div class="blog-main-post">
                     <img src="images/blog/9.jpg" alt="">
-                    <h6>María Zapata</h6>
-                    <h3>Ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-                    <p>Dolor sit amet, consectetur adipisicing elit. Rem, sequi. Earum, iure ab deserunt quam debitis maxime, error assumenda officiis cum sit facilis omnis totam.</p> <br>
-
-                    <div class="center" style="justify-content: center;">
-
-                        <img src="images/blog/parque.jpg" width="70%">
+                    <h6>{{$post->author->name}}</h6>
+                    <h3>{{$post->excerpt}}</h3>
+                    <div class="body">
+                        {{$post->body}}
                     </div>
-
-                    <br>
-
-                    <p>Consectetur adipisicing elit. Nemo recusandae laudantium voluptatem eligendi quis quo, quibusdam nostrum libero quidem reiciendis sequi non reprehenderit ipsa dolorem perspiciatis quod tempora tempore officia laboriosam? Consectetur cum quia quis omnis aperiam, tempore iure quisquam sequi doloremque, blanditiis. Quasi, consectetur?</p><br>
-
-                    <p><h5>Sit amet, consectetur adipisicing elit. Autem vitae necessitatibus voluptate quidem excepturi fugiat ipsam expedita perspiciatis quasi quos. Blanditiis ex, vero nesciunt. Nostrum laboriosam doloribus voluptates porro at, officiis blanditiis, molestiae aspernatur odio magnam quisquam inventore sit voluptatum corporis illum deleniti ipsam nemo iusto veniam quidem repellendus. Incidunt. </h5></p>
-
-                    <p>Adipisicing elit. Facilis illo quod, nostrum reprehenderit beatae obcaecati animi hic inventore architecto veniam? Velit veritatis sequi veniam dignissimos unde consequatur nihil itaque.</p>
-
-                    <h2>Vero minima non, eum optio magni laudantium doloremque debitis, in quae, nobis ut.</h2>
-
-                    <p>Adipisicing elit. Facilis illo quod, nostrum reprehenderit beatae obcaecati animi hic inventore architecto veniam? Velit veritatis sequi veniam dignissimos unde consequatur nihil itaque.</p>
-
                 </div> <!-- /.blog-main-post -->
                 <div class="tag-option clearfix">
                     <ul class="float-left">
@@ -50,9 +34,10 @@
                     </ul>
                     <ul class="float-right">
                         <li>Compartir:</li>
-                        <li><a href="" class="tran3s"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="" class="tran3s"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="" class="tran3s"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li><a href="{{setting('site.github')}}" class="tran3s" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li><a href="{{setting('site.twitter')}}" class="tran3s" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
                     </ul>
                 </div> <!-- /.tag-option -->
             </div> <!-- /.wrapper -->

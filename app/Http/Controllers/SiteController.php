@@ -23,4 +23,11 @@ class SiteController extends Controller
 
         return view('pages.blog',compact(['posts']));
     }
+
+    public function post($id)
+    {
+        $post = Post::findOrFail($id);
+
+        return view('pages.show',compact('post'));
+    }
 }
