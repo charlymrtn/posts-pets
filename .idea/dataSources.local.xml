@@ -17,7 +17,7 @@
         <user>vagrant</user>
         <use-password>false</use-password>
         <auth-type>KEY_PAIR</auth-type>
-        <private-key-path>C:\projects\posts\.vagrant\machines\posts\virtualbox\private_key</private-key-path>
+        <private-key-path>C:\projects\pets\.vagrant\machines\posts\virtualbox\private_key</private-key-path>
       </ssh-properties>
     </data-source>
   </component>
