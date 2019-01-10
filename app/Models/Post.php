@@ -13,4 +13,9 @@ class Post extends Model
     {
         return $this->hasOne('App\User','id','author_id');
     }
+
+    public function category()
+    {
+        return $this->belongsTo('App\Models\Category','category_id','id');
+    }
 }

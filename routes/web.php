@@ -17,6 +17,9 @@ Route::middleware('auth')->group(function (){
 
     Route::get('/blog', 'SiteController@blog')->name('blog');
     Route::get('/post/{slug}', 'SiteController@post')->name('post.show');
+
+    Route::get('/category/{slug}', 'SiteController@category')->name('category.show');
+    Route::get('/categories', 'SiteController@categories')->name('categories');
 });
 
 Route::get('/contacto', 'SiteController@contact')->name('contacto');

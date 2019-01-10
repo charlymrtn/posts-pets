@@ -21,16 +21,18 @@
                     <h6>{{$post->author->name}}</h6>
                     <h3>{{$post->excerpt}}</h3>
                     <div class="body">
-                        {{$post->body}}
+                        {!! $post->body !!}
                     </div>
                 </div> <!-- /.blog-main-post -->
                 <div class="tag-option clearfix">
                     <ul class="float-left">
                         <li>Categoría:</li>
-                        <li><a href="" class="tran3s">Cuidado,</a></li>
-                        <li><a href="" class="tran3s">Alimentación,</a></li>
-                        <li><a href="" class="tran3s">Diversión,</a></li>
-                        <li><a href="" class="tran3s">Crecimiento</a></li>
+                        <li><a href="{{route('category.show',$post->category->slug)}}" class="tran3s">{{$post->category->name}}</a></li>
+                        <br>
+                        <li>Plabras clave:</li>
+                        @foreach($keywords as $word)
+                            <li><a href="#!" class="tran3s" disabled>{{$word}}</a></li>
+                        @endforeach
                     </ul>
                     <ul class="float-right">
                         <li>Compartir:</li>
